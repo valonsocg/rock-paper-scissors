@@ -11,6 +11,7 @@ function getHumanChoice() {
 }
 
 function playGame() {
+  console.log("ROCK, PAPER, SCISSORS!");
   let humanScore = 0;
   let computerScore = 0;
   for (let i = 1; i <= 5; i++) {
@@ -46,7 +47,7 @@ function playGame() {
 
     playRound(humanSelection, computerSelection);
     console.log(
-      `Your score is:  ${humanScore} and Computer score is: ${computerScore}`
+      `------------ Your score is:  ${humanScore} and Computer score is: ${computerScore} ------------`
     );
   }
 
@@ -58,5 +59,3 @@ function playGame() {
 }
 
 playGame();
-
-// console.log(playRound());
