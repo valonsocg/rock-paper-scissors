@@ -53,9 +53,9 @@ buttons.forEach((button) => {
     let humanSelection = button.getAttribute("data-choice");
     let computerSelection = getComputerChoice();
 
-    spanUser.textContent = `Your move: ${humanSelection}`;
+    spanUser.textContent = `Your move: ${humanSelection} ----`;
 
-    spanComputer.textContent = `Computer's move: ${computerSelection}`;
+    spanComputer.textContent = ` Computer's move: ${computerSelection}`;
     playRound(humanSelection, computerSelection);
   });
 });
